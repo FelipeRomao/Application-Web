@@ -30,7 +30,6 @@ public class Album implements Serializable {
 	private int ano;
 
 	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER, mappedBy = "album")
-	//Não se pode usar essa função! @JoinColumn(name = "alb_id")
 	private List<Musica> musicas;
 
 	public int getId() {
